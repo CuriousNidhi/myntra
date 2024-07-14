@@ -1,3 +1,8 @@
 # myntra
 Myntra HackerRamp: WeForShe 2024 - Phase 2: Implementation
-https://github.com/sonam310-rgb
+Team: Unique One
+
+Members: Nidhi Kumari , Aditi Mishra , Sonam Kumari 
+
+University: Indian Institute of Information Technology Senapati, Manipur
+
