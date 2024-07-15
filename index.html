@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Drawing App </title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="script.js" defer></script>
+  <style>
+      
+  </style>
+</head>
+<body>
+  <div class="container">
+    <section class="tools-board">
+      <div class="row">
+        <label class="title">Shapes</label>
+        <ul class="options">
+          <li class="option tool" id="rectangle">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAG1BMVEX///90dHRLS0sAAADV1dXj4+Nvb29CQkLr6+v+sMIFAAAAyklEQVR4nO3bwQ2EQBADQe5ggfwjJgJ+9iKtqhIYtTRfbxsAAAAAAAAAAAAAAAAAAAAALGCcvy+do1547Nf/O9d+TCi86zfe3VMK+3/ybigMUNilMEFhl8IEhV0KExR2KUxQ2KUwQWGXwgSFXQoTFHYpTFDYpTBBYZfCBIVdChMUdilMUNilMEFhl8IEhV0KExR2KUxQ2KUwQWGXwgSFXQoTFHYpTFDYpTBBYdecwvV3wKtvudff4wMAAAAAAAAAAAAAAAAAAADABA/D4gnPCwgZwgAAAABJRU5ErkJggg==" alt="" width="30px" height="25px">
+            <span>Rectangle</span>
+          </li>
+          <li class="option tool" id="circle">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
+            </svg>
+            <span>Circle</span>
+          </li>
+          <li class="option tool" id="triangle">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPqW3xLZPVfcESfeFs4IHShaF_jbWHm_D9CQ&s" alt="" width="25px" height="25px">
+            <span>Triangle</span>
+          </li>
+          <li class="option">
+            <input type="checkbox" id="fill-color">
+            <label for="fill-color">Fill color</label>
+          </li>
+        </ul>
+      </div>
+      <div class="row">
+        <label class="title">Options</label>
+        <ul class="options">
+          <li class="option active tool" id="brush">
+            <img src="icons/brush.svg" alt="">
+            <span>Brush</span>
+          </li>
+          <li class="option tool" id="eraser">
+            <img src="icons/eraser.svg" alt="">
+            <span>Eraser</span>
+          </li>
+          <li class="option">
+            <input type="range" id="size-slider" min="1" max="30" value="5">
+          </li>
+        </ul>
+      </div>
+      <div class="row colors">
+        <label class="title">Colors</label>
+        <ul class="options">
+          <li class="option" style="background-color: #fff; border: 1px solid #bfbfbf;"></li>
+          <li class="option selected" style="background-color: #000;"></li>
+          <li class="option" style="background-color: #E02020;"></li>
+          <li class="option" style="background-color: #6DD400;"></li>
+          <li class="option" style="background-color: #4A98F7;"></li>
+          <li class="option" style="background-color: rgb(91, 59, 230);">
+            <input type="color" id="color-picker" value="#4A98F7">
+          </li>
+        </ul>
+      </div>
+      <div class="row buttons">
+        <button class="clear-canvas">Clear</button>
+        <button class="save-img">Save For Wishlist</button>
+        <button class="convert-sketch">Convert to Sketch</button>
+        <button class="submit-btn">Submit</button>
+      </div>
+    </section>
+    <section class="drawing-board">
+      <h2 style="font-size: 1.5rem; color: #4A98F7; text-align: center; margin-bottom: 20px; font-family: Verdana, Geneva, Tahoma, sans-serif;"> Showcase Your Creativity </h2>
+      <canvas id="drawing-board" width="800" height="600"></canvas>
+    </section>
+  </div>
+  <div id="similar-products-box" class="similar-products-box">
+    <p class="message">Matching Products</p>
+    <div class="products">
+      <div class="product-card">buy</div>
+      <div class="product-card">buy</div>
+      <div class="product-card">buy</div>
+      <div class="product-card">buy</div>
+      <div class="product-card">buy</div>
+      <div class="product-card">buy</div>
+      <div class="product-card">buy</div>
+      <div class="product-card">buy</div>
+    </div>
+  </div>
+</body>
+</html>
