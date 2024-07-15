@@ -11,3 +11,9 @@ Members:
 
 University: Indian Institute of Information Technology Senapati, Manipur
 
+PPT
+
+https://docs.google.com/presentation/d/18jSMBLeQ5EQ_UiQMWTTnz8D2qp0pNWiVMKo0GXS3KLY/edit#slide=id.g2ec292b4109_4_33
+
+
+
